@@ -1,0 +1,36 @@
+{
+  "name": "ninjs-rjs",
+  "description": "requirejs build wrapper",
+  "version": "0.0.22",
+  "main": "index.js",
+  "author": "Stuart MacKenzie",
+  "license": "AGPL-1.0",
+  "homepage": "https://github.com/snapptop/ninjs-rjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snapptop/ninjs-rjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snapptop/ninjs-rjs/issues"
+  },
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "scripts": {
+    "cli": "set NODE_ENV=development&&node ./cli.js",
+    "test": "set NODE_ENV=development && set DEBUG=* && node ./test/index.js",
+    "build.app": "set NODE_ENV=development && set DEBUG=* && node ./cmd/index.js --cmd=app"
+  },
+  "contributors": [
+    "Stuart John MacKenzie <stuart.mackenzie@snapptop.com>"
+  ],
+  "keywords": [
+    "ninjs",
+    "rjs"
+  ],
+  "dependencies": {
+    "ninjs-lodash": "^0.1.20",
+    "requirejs": "^2.3.2"
+  },
+  "devDependencies": {}
+}
